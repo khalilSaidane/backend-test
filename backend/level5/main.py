@@ -44,7 +44,7 @@ for rental in object_data.rentals:
 
 def obj_dict(obj):
     return obj.__dict__
-with open('data/expected_output.json','w') as f:
+with open('data/output.json','w') as f:
     json.dump(output, f, indent=2,  default=obj_dict)
 
 
